@@ -1,0 +1,13 @@
+@theme {
+  /* Colors */
+  --color-background: #0f172a;
+
+  /* Korry buttons labels */
+  --color-kor-amber: #FDB423;
+  --color-kor-yellow: #FFD364;
+  --color-kor-blue: #9AEDFF;
+  --color-kor-green: #BCFF85;
+  --color-kor-red: #FF5454;
+  --color-kor-white: #E9E9E9;
+
+}
