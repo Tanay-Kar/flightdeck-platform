@@ -1,3 +1,6 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter";
 
-/* Blank page */
+@theme {
+  --font-sans: "Inter Variable", sans-serif;
+}
