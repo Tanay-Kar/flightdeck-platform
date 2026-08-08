@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@fontsource-variable/inter";
+@import "@fontsource/iosevka-charon-mono";
 @import "./theme.css";
 
 body {
@@ -8,4 +9,5 @@ body {
 
 @theme {
   --font-sans: "Inter Variable", sans-serif;
+  --font-mono: "Iosevka Charon Mono", monospace;
 }

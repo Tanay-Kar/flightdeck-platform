@@ -2,12 +2,12 @@
   /* Colors */
   --color-background: #0f172a;
 
-  /* Korry buttons labels */
-  --color-kor-amber: #FDB423;
-  --color-kor-yellow: #FFD364;
-  --color-kor-blue: #9AEDFF;
-  --color-kor-green: #BCFF85;
-  --color-kor-red: #FF5454;
-  --color-kor-white: #E9E9E9;
+  /* Annunciator labels */
+  --color-ann-amber: #FDB423;
+  --color-ann-yellow: #FFD364;
+  --color-ann-cyan: #9AEDFF;
+  --color-ann-green: #BCFF85;
+  --color-ann-red: #FF5454;
+  --color-ann-white: #E9E9E9;
 
 }
