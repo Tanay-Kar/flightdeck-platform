@@ -1,4 +1,4 @@
-import KorryBtn from "./components/AnnButton/AnnButton"
+import AnnButton from "./components/AnnButton/AnnButton"
 
 function App() {
   return (
@@ -13,13 +13,13 @@ function App() {
       <div className="flex items-center justify-center gap-4 mx-auto my-10">
 
         <div className="w-50 shrink-0">
-          <KorryBtn top={{ text: "AVAIL", color: "green", box: false }} bottom={{ text: "", color: "off", box: false }} />
+          <AnnButton top={{ text: "AVAIL", color: "green", box: false }} bottom={{ text: "", color: "off", box: false }} />
         </div>
         <div className="w-50 shrink-0">
-          <KorryBtn top={{ text: "", color: "off", box: false }} bottom={{ text: "OFF", color: "white", box: true }} />
+          <AnnButton top={{ text: "", color: "off", box: false }} bottom={{ text: "OFF", color: "white", box: true }} />
         </div>
         <div className="w-50 shrink-0">
-          <KorryBtn top={{ text: "MASTER", color: "yellow", box: false }} bottom={{ text: "CAUT", color: "yellow", box: false }} />
+          <AnnButton top={{ text: "MASTER", color: "yellow", box: false }} bottom={{ text: "CAUT", color: "yellow", box: false }} />
         </div>
       </div>
     </>
