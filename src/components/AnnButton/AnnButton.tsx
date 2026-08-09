@@ -6,6 +6,9 @@ type AnnColor =
     | "red"
     | "white"
     | "cyan"
+
+type AnnState =
+    | "on"
     | "off";
 
 const annColors: Record<AnnColor, string> = {
@@ -15,32 +18,33 @@ const annColors: Record<AnnColor, string> = {
     red: "var(--color-ann-red)",
     white: "var(--color-ann-white)",
     cyan: "var(--color-ann-cyan)",
-    off: "#131313",
 };
 
 export interface AnnLabelProps {
     text: string;
     color: AnnColor;
     box?: boolean;
+    annState?: AnnState;
     className?: string;
 }
 
-export function AnnLabel({ text, color, box }: AnnLabelProps) {
-    const annColor = annColors[color];
-    const isOff = color === "off";
+export function AnnLabel({ text, color, box, annState }: AnnLabelProps) {
+    const offColor = "#131313";
+    const annColor = annState === "on" ? annColors[color] : annState === "off" ? offColor : offColor;
+
     return (
         <div
             className={`flex items-center justify-center w-full border-4`}
             style={{
                 borderColor: box ? annColor : "transparent",
-                boxShadow: box && !isOff ? `0 0 16px color-mix(in srgb, ${annColor} 20%, transparent)` : "none",
+                boxShadow: box && annState === "on" ? `0 0 16px color-mix(in srgb, ${annColor} 20%, transparent)` : "none",
             }}
         >
             <h1
                 className={`font-bold text-[22cqw] font-mono tracking-[-0.02em]`}
                 style={{
                     color: annColor,
-                    textShadow: !isOff ? `0 0 16px color-mix(in srgb, ${annColor} 20%, transparent)` : "none",
+                    textShadow: annState === "on" ? `0 0 16px color-mix(in srgb, ${annColor} 20%, transparent)` : "none",
                 }}
             >
                 {text}

@@ -13,13 +13,13 @@ function App() {
       <div className="flex flex-col items-center justify-center gap-4 mx-auto my-10">
 
         <div className="w-50 shrink-0">
-          <AnnButton top={{ text: "AVAIL", color: "green", box: false }} bottom={{ text: "START", color: "off", box: true }} />
+          <AnnButton top={{ text: "AVAIL", color: "green", box: false, annState: "on" }} bottom={{ text: "START", color: "cyan", box: true, annState: "off" }} />
         </div>
         <div className="w-50 shrink-0">
-          <AnnButton top={{ text: "FAULT", color: "amber", box: false }} bottom={{ text: "OFF", color: "off", box: true }} />
+          <AnnButton top={{ text: "FAULT", color: "amber", box: false, annState: "on" }} bottom={{ text: "OFF", color: "white", box: true, annState: "off" }} />
         </div>
         <div className="w-50 shrink-0">
-          <AnnButton top={{ text: "MASTER", color: "off", box: false }} bottom={{ text: "CAUT", color: "off", box: false }} />
+          <AnnButton top={{ text: "MASTER", color: "yellow", box: false, annState: "off" }} bottom={{ text: "CAUT", color: "yellow", box: false, annState: "off" }} />
         </div>
       </div>
     </>
