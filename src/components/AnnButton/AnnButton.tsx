@@ -15,7 +15,7 @@ const annColors: Record<AnnColor, string> = {
     red: "var(--color-ann-red)",
     white: "var(--color-ann-white)",
     cyan: "var(--color-ann-cyan)",
-    off: "#090909",
+    off: "#131313",
 };
 
 export interface AnnLabelProps {
@@ -26,19 +26,21 @@ export interface AnnLabelProps {
 }
 
 export function AnnLabel({ text, color, box }: AnnLabelProps) {
+    const annColor = annColors[color];
+    const isOff = color === "off";
     return (
         <div
             className={`flex items-center justify-center w-full border-4`}
             style={{
-                borderColor: box ? annColors[color] : "transparent",
-                boxShadow: box ? `0 0 8px color-mix(in srgb, ${annColors[color]} 40%, transparent)` : "none",
+                borderColor: box ? annColor : "transparent",
+                boxShadow: box && !isOff ? `0 0 16px color-mix(in srgb, ${annColor} 20%, transparent)` : "none",
             }}
         >
             <h1
                 className={`font-bold text-[22cqw] font-mono tracking-[-0.02em]`}
                 style={{
-                    color: annColors[color],
-                    textShadow: `0 0 8px color-mix(in srgb, ${annColors[color]} 30%, transparent)`,
+                    color: annColor,
+                    textShadow: !isOff ? `0 0 16px color-mix(in srgb, ${annColor} 20%, transparent)` : "none",
                 }}
             >
                 {text}
