@@ -35,7 +35,7 @@ export function AnnLabel({ text, color, box, annState }: AnnLabelProps) {
 
     return (
         <div
-            className={`flex items-center justify-center w-full border-4`}
+            className={`flex items-center justify-center w-full border-4 select-none`}
             style={{
                 borderColor: box ? annColor : "transparent",
                 boxShadow: box && annState === "on" ? `0 0 16px color-mix(in srgb, ${annColor} 20%, transparent)` : "none",
