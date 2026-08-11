@@ -1,3 +1,4 @@
+import styles from "./AnnButton.module.css";
 
 type AnnColor =
     | "green"
@@ -74,7 +75,7 @@ export default function AnnButton({ top, bottom }: AnnButtonProps) {
     return (
         <div className="@container w-full aspect-square bg-[#202020] rounded-lg p-1">
             <div className="size-full bg-[#161616] [box-shadow:inset_0_0_4px_rgba(2,2,2,0.25),0_0_4px_5px_rgba(32,32,32,0.60)] rounded-md p-4">
-                <div className="relative overflow-hidden size-full bg-[#101010] [box-shadow:inset_0_0_4px_rgba(64,64,64,0.25),0_0_8px_10px_rgba(1,1,1,0.30)] rounded-xl p-3">
+                <div className={`${styles.annBtn} relative overflow-hidden size-full bg-[#101010] rounded-xl p-3`}>
                     <div className="flex flex-col justify-center h-full">
                         <div className="flex h-1/2 pt-2 ">
                             <AnnLabel {...top} />

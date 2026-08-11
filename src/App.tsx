@@ -19,7 +19,7 @@ function App() {
           <AnnButton top={{ text: "FAULT", color: "amber", box: false, annState: "on" }} bottom={{ text: "OFF", color: "white", box: true, annState: "off" }} />
         </div>
         <div className="w-50 shrink-0">
-          <AnnButton top={{ text: "MASTER", color: "yellow", box: false, annState: "off" }} bottom={{ text: "CAUT", color: "yellow", box: false, annState: "off" }} />
+          <AnnButton top={{ text: "MASTER", color: "yellow", box: false, annState: "on" }} bottom={{ text: "CAUT", color: "yellow", box: false, annState: "on" }} />
         </div>
       </div>
     </>
