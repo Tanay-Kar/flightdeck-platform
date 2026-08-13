@@ -1,0 +1,14 @@
+.fcuBtn {
+  transform: scale(1);
+  box-shadow:
+    inset 0 0 4px rgba(64, 64, 64, 0.25),
+    0 0 8px 10px rgba(1, 1, 1, 0.30);
+  transition: transform 100ms ease-out, box-shadow 100ms ease-out;
+}
+
+.fcuBtn:active {
+  transform: scale(0.98);
+  box-shadow:
+    inset 0 2px 5px rgba(0, 0, 0, 0.75),
+    0 0 6px 7px rgba(1, 1, 1, 0.30);
+}
