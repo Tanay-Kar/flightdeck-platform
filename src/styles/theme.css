@@ -10,4 +10,16 @@
   --color-ann-red: #FF5454;
   --color-ann-white: #E9E9E9;
 
+  /* FCU Colors */
+  --color-fcu-amber: #edba3a;
+  --color-fcu-grey: #212121;
+  --background-image-fcu: linear-gradient(
+    90deg,
+    #85BA52 0%,
+    #ACF06B 50%,
+    #85BA52 100%
+  );
+  
+
+
 }
