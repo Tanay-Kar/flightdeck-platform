@@ -27,7 +27,7 @@ export default function FCUButton({text, fcuState}: FCUButtonProps) {
             <div className="size-full bg-[#161616] [box-shadow:inset_0_0_4px_rgba(2,2,2,0.25),0_0_4px_5px_rgba(32,32,32,0.60)] rounded-md p-4">
                 <div className={`${styles.fcuBtn} relative overflow-hidden size-full bg-[#101010] rounded-xl p-3`}>
                     <div className="flex flex-col justify-center h-full">
-                        <div className="flex flex-col gap-[20%] h-1/2 pt-2 px-2">
+                        <div className="flex flex-col gap-[18%] h-1/2 pt-2 px-2">
                                 <div className={`rounded-sm w-full h-[16%] ${barClasses}`}></div>
                                 <div className={`rounded-sm w-full h-[16%] ${barClasses}`}></div>
                                 <div className={`rounded-sm w-full h-[16%] ${barClasses}`}></div>

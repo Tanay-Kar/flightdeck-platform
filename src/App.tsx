@@ -1,5 +1,6 @@
 import AnnButton from "./components/AnnButton/AnnButton"
 import FCUButton from "./components/FCUButton/FCUButton"
+import Knob from "./components/GatedKnob/GatedKnob"
 
 function App() {
   return (
@@ -39,6 +40,22 @@ function App() {
             </div>
             <div className="w-50 shrink-0">
               <FCUButton text="A/THR" fcuState="on" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold text-center mt-20 text-mist-300">
+            Gated Knob Test
+          </h3>
+          <div className="flex flex-col items-center justify-center gap-4 mx-auto my-10">
+            <div className="w-50 shrink-0">
+              <Knob />
+            </div>
+            <div className="w-50 shrink-0">
+              <Knob />
+            </div>
+            <div className="w-50 shrink-0">
+              <Knob />
             </div>
           </div>
         </div>
