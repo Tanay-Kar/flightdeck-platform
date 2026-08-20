@@ -16,13 +16,64 @@ function App() {
           <div className="flex flex-col items-center justify-center gap-4 mx-auto my-10">
 
             <div className="w-50 shrink-0">
-              <AnnButton top={{ text: "AVAIL", color: "green", box: false, annState: "on" }} bottom={{ text: "START", color: "cyan", box: true, annState: "off" }} />
+              <AnnButton
+                config={{
+                  top: {
+                    text: "AVAIL",
+                    color: "green",
+                    box: false,
+                  },
+                  bottom: {
+                    text: "ON",
+                    color: "cyan",
+                    box: true,
+                  },
+                }}
+                state={{
+                  top: true,
+                  bottom: false,
+                }}
+              />
             </div>
             <div className="w-50 shrink-0">
-              <AnnButton top={{ text: "FAULT", color: "amber", box: false, annState: "on" }} bottom={{ text: "OFF", color: "white", box: true, annState: "off" }} />
+              <AnnButton
+                config={{
+                  top: {
+                    text: "FAULT",
+                    color: "amber",
+                    box: false,
+                  },
+                  bottom: {
+                    text: "OFF",
+                    color: "white",
+                    box: true,
+                  },
+                }}
+                state={{
+                  top: true,
+                  bottom: false,
+                }}
+              />
             </div>
             <div className="w-50 shrink-0">
-              <AnnButton top={{ text: "MASTER", color: "yellow", box: false, annState: "on" }} bottom={{ text: "CAUT", color: "yellow", box: false, annState: "on" }} />
+              <AnnButton
+                config={{
+                  top: {
+                    text: "MASTER",
+                    color: "yellow",
+                    box: false,
+                  },
+                  bottom: {
+                    text: "CAUT",
+                    color: "yellow",
+                    box: false,
+                  },
+                }}
+                state={{
+                  top: true,
+                  bottom: true,
+                }}
+              />
             </div>
           </div>
         </div>
