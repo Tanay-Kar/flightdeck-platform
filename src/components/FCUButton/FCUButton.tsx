@@ -13,13 +13,21 @@ function DiffuserGrain() {
     );
 }
 
-export interface FCUButtonProps {
-    text?: string;
-    fcuState?: "on" | "off";
+export interface FCUButtonConfig {
+    text: string;
 }
 
-export default function FCUButton({text, fcuState}: FCUButtonProps) {
-    const barClasses = fcuState === "on"
+export interface FCUButtonState {
+    fcuState: boolean;
+}
+
+export interface FCUButtonProps {
+    config: FCUButtonConfig;
+    state: FCUButtonState;
+}
+
+export default function FCUButton({config, state}: FCUButtonProps) {
+    const barClasses = state.fcuState
         ? "bg-fcu shadow-[0_0_16px_rgba(133,206,66,0.2)]"
         : "bg-fcu-grey shadow-none";
     return (
@@ -36,7 +44,7 @@ export default function FCUButton({text, fcuState}: FCUButtonProps) {
                             <div className={`flex items-center justify-center w-full select-none`}>
                                 <h1
                                     className={`font-bold text-[22cqw] font-mono tracking-[-0.02em] text-fcu-amber`}>
-                                    {text}
+                                    {config.text}
                                 </h1>
                             </div>
                         </div>

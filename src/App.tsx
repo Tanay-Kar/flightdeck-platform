@@ -84,13 +84,34 @@ function App() {
           <div className="flex flex-col items-center justify-center gap-4 mx-auto my-10">
 
             <div className="w-50 shrink-0">
-              <FCUButton text="AP 1" fcuState="on" />
+              <FCUButton
+                config={{
+                  text: "AP 1",
+                }}
+                state={{
+                  fcuState: true,
+                }}
+              />
             </div>
             <div className="w-50 shrink-0">
-              <FCUButton text="AP 2" fcuState="off" />
+              <FCUButton
+                config={{
+                  text: "AP 2",
+                }}
+                state={{
+                  fcuState: false,
+                }}
+              />
             </div>
             <div className="w-50 shrink-0">
-              <FCUButton text="A/THR" fcuState="on" />
+              <FCUButton
+                config={{
+                  text: "A/THR",
+                }}
+                state={{
+                  fcuState: true,
+                }}
+              />
             </div>
           </div>
         </div>
