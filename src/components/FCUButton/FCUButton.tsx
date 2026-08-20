@@ -31,7 +31,7 @@ export default function FCUButton({config, state}: FCUButtonProps) {
         ? "bg-fcu shadow-[0_0_16px_rgba(133,206,66,0.2)]"
         : "bg-fcu-grey shadow-none";
     return (
-        <div className="@container w-full aspect-square bg-[#202020] rounded-lg p-1">
+        <div className="@container h-full aspect-square bg-[#202020] rounded-lg p-1">
             <div className="size-full bg-[#161616] [box-shadow:inset_0_0_4px_rgba(2,2,2,0.25),0_0_4px_5px_rgba(32,32,32,0.60)] rounded-md p-4">
                 <div className={`${styles.fcuBtn} relative overflow-hidden size-full bg-[#101010] rounded-xl p-3`}>
                     <div className="flex flex-col justify-center h-full">

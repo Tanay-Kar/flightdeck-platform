@@ -13,7 +13,7 @@ function computeViewBox({ minX, minY, width, height }: typeof CONTENT, margin: n
 
 export default function Knob() {
     return (
-        <div className="@container relative w-full aspect-square select-none">
+        <div className="@container relative h-full aspect-square select-none">
             <svg viewBox={computeViewBox(CONTENT, MARGIN)} className="size-full">
                 <g transform={`translate(0, 12)`}>
 

@@ -15,7 +15,7 @@ function App() {
           </h3>
           <div className="flex flex-col items-center justify-center gap-4 mx-auto my-10">
 
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <AnnButton
                 config={{
                   top: {
@@ -35,7 +35,7 @@ function App() {
                 }}
               />
             </div>
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <AnnButton
                 config={{
                   top: {
@@ -55,7 +55,7 @@ function App() {
                 }}
               />
             </div>
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <AnnButton
                 config={{
                   top: {
@@ -83,7 +83,7 @@ function App() {
           </h3>
           <div className="flex flex-col items-center justify-center gap-4 mx-auto my-10">
 
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <FCUButton
                 config={{
                   text: "AP 1",
@@ -93,7 +93,7 @@ function App() {
                 }}
               />
             </div>
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <FCUButton
                 config={{
                   text: "AP 2",
@@ -103,7 +103,7 @@ function App() {
                 }}
               />
             </div>
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <FCUButton
                 config={{
                   text: "A/THR",
@@ -120,13 +120,13 @@ function App() {
             Gated Knob Test
           </h3>
           <div className="flex flex-col items-center justify-center gap-4 mx-auto my-10">
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <Knob />
             </div>
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <Knob />
             </div>
-            <div className="w-50 shrink-0">
+            <div className="h-50 shrink-0">
               <Knob />
             </div>
           </div>
